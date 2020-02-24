@@ -29,7 +29,7 @@
   },
   "scripts": {
     "build": "npm run test && babel src -d lib",
-    "button": "babel-node src/button",
+    "button": "babel src/button.js --out-file app.js",
     "clean": "git clean -fXd -e \\!node_modules -e \\!node_modules/**/*",
     "clean:purge": "git clean -fXd",
     "entry": "babel-node src/entry",

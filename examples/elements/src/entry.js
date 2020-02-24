@@ -5,6 +5,7 @@ class Example extends Component {
   constructor(props) {
     super(props);
     this.entry = createRef();
+    console.log(this.entry)
   }
 
   render() {

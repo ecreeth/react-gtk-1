@@ -11,7 +11,7 @@ class Example extends Component {
     return (
       <Box ref={this.root}>
         <Button label="One" />
-        <Button label="Two" />
+        <Button label="Two" clicked={() => console.log('asdfasdf')} />
       </Box>
     );
   }
