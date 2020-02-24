@@ -188,12 +188,10 @@ export default ReactReconciler<
     callback: () => any,
     _options: { timeout: number }
   ): any {
-    if (callback) {
       throw new Error(
         'Scheduling a callback twice is excessive. Instead, keep track of ' +
           'whether the callback has already been scheduled.'
       );
-    }
   },
 
   cancelDeferredCallback(_callbackID: any): void {

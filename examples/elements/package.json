@@ -33,11 +33,7 @@
     "clean": "git clean -fXd -e \\!node_modules -e \\!node_modules/**/*",
     "clean:purge": "git clean -fXd",
     "entry": "babel-node src/entry",
-    "format": "prettier --write ./src/**/*.js",
-    "lint": "npm run format && eslint ./",
-    "lint:fix": "npm run format && eslint --fix ./",
     "prepublish": "npm run build",
-    "test": "npm run lint",
     "text": "babel-node src/text"
   },
   "dependencies": {
